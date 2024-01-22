@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <script type="text/javascript">
+                function compareValues(value1, value2) {
+         return value1 > value2;
+}
+        var a=prompt("Enter a first number :-");
+        var b=prompt("Enter a second number :-");
+
+        // Convert the user inputs to numbers
+        var value1 = parseFloat(a);
+        var value2 = parseFloat(b);
+      
+        // Check if the inputs are valid numbers
+        if (!isNaN(value1) && !isNaN(value2)) {
+        // Compare the values
+        const result = compareValues(value1, value2);
+        // Display the comparison result
+        console.log(`Is ${value1} greater than ${value2}? ${result}`);
+        } 
+       else {
+       // Alert the user if the inputs are not valid numbers
+    console.log("Please enter valid numbers for both values.");
+       }
+
+ </script>   
+</body>
+</html>
